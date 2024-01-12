@@ -1,15 +1,15 @@
 :root {
-    --bg-body: #222;
-    --txt-body: #f0f0f0;
-    --family-body: monospace;
+    --color-bg: #faf7f0;
+    --color-font: #181818;
+  
   
     --header-height: 60px;
   }
   .light{
-    --bg-body:#222;
+    --color-bg:#181818;
     --bg-alt:#f2f2f2;
-    --txt-body:#222;
-    --primary-color:rgb(111, 0, 255);
+    --color-font:#222;
+  
   }
   
   html {
@@ -28,6 +28,8 @@
   }
   
   body {
+    background-color: var(--color-bg);
+    color: var(--color-font);
     font-size: 1.6rem;
     margin: 0;
   }
@@ -53,10 +55,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }.container{
     max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin-left: 250px;
+    padding: 70px 20px;
 }.nav-lista{
     list-style: none;
     margin: 0auto ;
@@ -70,7 +73,14 @@
     transition: color .4s;
 }.lists-link:hover{
     color: yellow;
-}.actions{
+}.iconSun{
+    display: flex;
+    margin-left: 200px;
+    cursor: pointer;
+    font-size:16px;
+   
+}
+.actions{
     display: flex;
     gap: 10px;
     align-items: center;
