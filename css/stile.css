@@ -1,6 +1,13 @@
 :root {
     --color-bg: #faf7f0;
     --color-font: #181818;
+    --color-Red: hsl(0, 78%, 62%);
+    --color-Cyan: hsl(180, 62%, 55%);
+    --color-Orange: hsl(34, 97%, 64%);
+    --color-Blue: hsl(212, 86%, 64%);
+    --color-neutral-white: hsl(0, 0%, 94%);
+    --color-Green: green;
+    --color-Brown: brown;
   
   
     --header-height: 60px;
@@ -66,7 +73,7 @@
     margin: 0auto ;
     padding: 0;
     display: flex;
-    gap: 40px;
+    gap: 20px;
     color: #e2dfd2;
     font-size: 20px;
     
@@ -129,7 +136,7 @@
     width: 100%;
     margin:auto;
     border-radius: 16px;
-    box-shadow: 0px 0px 5px 0;
+    box-shadow: 0px 0px 3px 0;
   
     /*
     background: linear-gradient(rgba(1,4,5,.27),rgba(1,4,5,.9)) ;*/
@@ -262,10 +269,7 @@ h2{
     overflow: hidden;
     margin-top: 100px;
     margin-left: 7%;
-    border-radius: 50%;
- 
-    
-   
+    border-radius: 50%;  
 }
 .box1 img{
     width: 100%;
@@ -360,7 +364,6 @@ h2{
 }
 .hijo img{
     width: 50%;
-    object-fit: cover;
     transition: .5s;   
     border-radius: 4px;
 }.hijo:hover img{
@@ -393,18 +396,33 @@ h2{
     align-content:center ;   
   
 }.hijo2{
-    background-color: rgb(241, 229, 229);
+    background-color: var(--color-neutral-white);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    box-shadow: 0 2px 5px 0 ;
-    transition: .2s;
+    box-shadow: 0 1px 2px 0 ;
+    transition: .1s;
+    
+
+      
+}.hijo2_blue:nth-child(1){
+    border-top:10px solid var(--color-Blue);
+}.hijo2_red:nth-child(2){
+    border-top:10px solid var(--color-Red);
+}.hijo2_orange:nth-child(3){
+    border-top:10px solid var(--color-Orange);
+}.hijo2_green:nth-child(4){
+    border-top:10px solid var(--color-Green);
+}.hijo2_yellow:nth-child(5){
+    border-top:10px solid rgb(172, 172, 40);
+}.hijo2_brown:nth-child(6){
+    border-top:10px solid var(--color-Brown);
 }
 .hijo2 p{
     text-align: center;
 }.hijo2:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }.seccion3 h2{
     color: #151414;
     background: linear-gradient(#be6c14,#7dec1c);
@@ -436,7 +454,6 @@ h2{
     text-align: center;
     border-radius: 14px;
     
-    
 }.seccion4:hover{
     cursor: pointer;
     background-color: rgb(254, 249, 231);
@@ -455,7 +472,7 @@ h2{
 
 .menu-movile{
     position: fixed;
-    left: -100%;
+    left:-100%;
     top: var(--header-height);
     border: 2px solid ;
     width: 80%;

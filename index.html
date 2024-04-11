@@ -12,6 +12,7 @@
     />
 
     <link rel="stylesheet" href="css/stile.css" />
+    <link rel="stylesheet" href="css/form.css">
     <title>Portafolio-01</title>
     
   </head>
@@ -20,7 +21,7 @@
     
     <header id="home" class="header">
       
-      <nav id="navMenu" class="menu container">
+      <nav id="navMenu" class="menu container ">
         <h2 class="logo"><span>//</span>PF<span>.</span></h2>
       <div id="nave" class="menu-movile">
         <ul class="nav-lista">
@@ -29,6 +30,7 @@
           <li><a class="lists-link" href="#about">About</a></li>
           <li><a class="lists-link" href="#habilidades">Habilidades</a></li>
           <li><a class="lists-link" href="#servicios">Servicios</a></li>
+          <li><a class="lists-link" href="#contactos">Contactos</a></li>
         </ul>
       </div>
       <!--El modo oscuro lo realize de esta forma agregando una etiqueta de icono en un li-->>
@@ -52,7 +54,7 @@
           Soy una persona que me gusta programar usando diferentes tecnologias.
           Como HTML, CSS, JAVASCRIPT entre otros lenguajes.
         </p>
-        <a href="">Ir a Portafolio</a>
+        <a href="./portafolio_pages/portafolio.html">Ir a Portafolio</a>
       </div>
     </section><br><br>
     <!--Ahora acerca de mi hablare un poco-->
@@ -94,36 +96,53 @@
     <section id="servicios" class="seccion3">
       <h2>Servicios como Desarrollador</h2>
       <div class="grid2">
-        <div class="hijo2">
-          <p>Determinación de la estructura y diseño de páginas web.
-          Lograr una buena experiencia para los usuarios
-          Desarrollo de mejoras para la experiencia de usuario.</p>
+        <div class="hijo2 hijo2_blue" >
+          <p>Desarrollo de software a medida: Trabajar en el desarrollo
+            de aplicaciones web, según las necesidades
+             específicas de los clientes.</p>
         </div>
         
-        <div class="hijo2">
+        <div class="hijo2 hijo2_red">
           <p>
-            Asegurar que el diseño web esté optimizado para todo tipo de dispositivos.
+            Mantenimiento y soporte técnico: Brindar asistencia técnica
+             a los usuarios finales, solucionar problemas y realizar
+              actualizaciones de software..
           </p>
         </div>
-        <div class="hijo2">
+        <div class="hijo2 hijo2_orange">
           <p>
-          Testar y solucionar problemas que puedan ir apareciendo durante el desarrollo de cada proyecto.</p>
+            Desarrollo de sitios web: Crear sitios web para empresas, organizaciones o individuos, ya sea desde cero.</p>
         </div>
-        <div class="hijo2">
+        <div class="hijo2 hijo2_green">
           <p>Identificar las necesidades de los usuarios y del sistema para el desarrollo de nuevos sitios web y aplicaciones.</p>
         </div>
-        <div class="hijo2">
-          <p>Lograr un equilibrio entre diseño funcional y estético
-            Creación de código reutilizable para uso en otros proyectos.
+        <div class="hijo2 hijo2_yellow">
+          <p>Integración de sistemas: Conectar diferentes sistemas y 
+            aplicaciones para que puedan compartir datos y funcionar
+             de manera conjunta de manera eficiente.
             </p>
         </div>
-        <div class="hijo2">
-          <p>Escribir o revisar código para distintos proyectos y comprobar que todo funcione como debe.
-            Ejecutar pruebas de funcionalidad y depurar código.
+        <div class="hijo2 hijo2_brown">
+          <p>Pruebas de software: Participar en la fase de pruebas de software para
+             identificar y corregir errores antes de que el producto final se lance al mercado.
           </p>
         </div>
       
     </section><br><br>
+    <section id="contactos" class="form group_form">
+      <form action="https://formsubmit.co/daniloomarmontecel@gmail.com" method="POST">
+        <h2>Contactos</h2>
+        <input name="name" type="text" placeholder="Nombre">
+        <input name="email" type="email" placeholder="Correo">
+        <input name="phone" type="number" placeholder="Telefono">
+        <textarea name="message" placeholder="Escribenos" cols="19" rows="5"></textarea>
+        <input class="btn" type="submit" value="Enviar"/>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5501/">
+        <input type="hidden" name="_captcha" value="false">
+        
+      </form>
+    </section><br><br><br><br>
+  </main><br><br><br><br>
     <section class="seccion4">
         <footer class="footer" id="">
           <div class="redes">Contactos
@@ -136,7 +155,7 @@
       
 
     </section>
-    </main>
+    
     <script src="js/index.js">
       
  
